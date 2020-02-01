@@ -38,7 +38,7 @@ def connect_db():
     session = sessionmaker(engine)
 
     # Возвращаем сессию 
-    return session
+    return session()
 
 
 def request_user_data():
